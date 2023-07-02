@@ -1,6 +1,37 @@
 body {
-    background: url(assets/astronaut.jpg);
+    background: url(../assets/astronaut.jpg);
+    color: white;
+    padding-bottom: 80px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+ul {
+    float: right;
+}
+ul li {
+    display:inline-block;
+}
+
+ul li a{
+    color:white;
+    padding: 5px 20px;
+    border: 1px solid white;
+    transition: 0.6s ease; /*Change color slowly when hoevered over*/
+}
+
+ul li a:hover {
+    background-color: white;
+    color:black
+}
+
+ul li.active a { 
+    background-color: white;
+    color:black
+}
+
+p {
+    background-color: green;
+    color: red
 }
