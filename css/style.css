@@ -30,11 +30,6 @@ ul li a:hover {
     color:black
 }
 
-.main {
-    max-width: 1200px;
-    margin: auto
-}
-
 ul li.active a { 
     background-color: white;
     color:black
@@ -47,7 +42,7 @@ ul li.active a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 55px;
+    font-size: 70px;
 }
 
 .resume {
