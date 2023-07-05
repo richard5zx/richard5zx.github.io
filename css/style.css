@@ -7,7 +7,11 @@ header {
 }
 
 ul {
-    float: right;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 ul li {
@@ -26,12 +30,6 @@ ul li a:hover {
     color:black
 }
 
-.logo h1 {
-    float: left;
-    width: 250px;
-    height: auto;
-}
-
 .main {
     max-width: 1200px;
     margin: auto
@@ -42,23 +40,41 @@ ul li.active a {
     color:black
 }
 
-.title {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%-50%);
-}
-
 .title h1 {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 70px;
+    font-size: 55px;
 }
 
-p {
-    background-color: green;
-    color: red
+.resume {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-footer {
-    background-color:white;
+.btn {
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color:black
+}
+
+.footer {
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
