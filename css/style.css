@@ -1,15 +1,15 @@
-/* All */ 
+/* Header */
 body {
     background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(../assets/astronaut.jpg);
-    height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-ul {
+.main {
     text-align: center;
-    line-height: 100px;
+    position: relative;
+    top: 10px
 }
 
 ul li {
@@ -33,12 +33,12 @@ ul li.active a {
     color:black
 }
 
+/* Footer */
 .footer {
-    margin: 0;
-    position: fixed;
-    bottom: 0%;
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,0);
+    bottom: 10px;
 }
 
 /* Index */ 
@@ -47,22 +47,17 @@ ul li.active a {
     line-height: 50px;
     color: white;
     font-size: 50px;
-
-    animation: h1slide;
-    animation-duration: 2.5s;
 }
 
 .name h1 {
     text-shadow: 5px 5px 5px black;
 }
 
-@keyframes h1slide {
-    from{margin-left: 100%;};
-    from{margin-left: 50%;};
-}
-
 .resume {
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 35%;
 }
 
 .btn {
@@ -78,51 +73,4 @@ ul li.active a {
     color:black
 }
 
-/* About me */ 
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 100px auto;
-    color: white;
-}
-
-.container {
-    padding: 5px 20px;
-    position: relative;
-    width: 40%;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 15px;
-    font-size: 15px;
-}
-
-.left-container {
-    left: 0%;
-}
-
-.right-container {
-    left: 57%
-}
-
-.container img {
-    position: absolute;
-    width: 40px;
-    border-radius: 50%;
-    right:-20px;
-    top: 32px;
-    z-index: 10;
-}
-
-.right-container img {
-    left: -20px;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: white;
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-}
+/* About me */
