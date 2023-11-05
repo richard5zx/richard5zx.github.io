@@ -1,5 +1,4 @@
-/* Index */
-/* Header */
+/* Index - Header */
 body {
     background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(../assets/astronaut.jpg);
     background-size: cover;
@@ -34,14 +33,7 @@ ul li.active a {
     color:black
 }
 
-/* Footer */
-.footer {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,0);
-    bottom: 10px;
-}
-
+/* Index - Main */
 .name {
     text-align: center;
     line-height: 50px;
@@ -71,6 +63,14 @@ ul li.active a {
 .btn:hover {
     background-color: white;
     color:black
+}
+
+/* Index - Footer */
+.footer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 10px;
 }
 
 /* About me */
