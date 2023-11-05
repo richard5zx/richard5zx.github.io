@@ -1,3 +1,4 @@
+/* Index */
 /* Header */
 body {
     background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(../assets/astronaut.jpg);
@@ -41,7 +42,6 @@ ul li.active a {
     bottom: 10px;
 }
 
-/* Index */ 
 .name {
     text-align: center;
     line-height: 50px;
@@ -74,3 +74,13 @@ ul li.active a {
 }
 
 /* About me */
+
+/* Contact */
+.email {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: white;
+    font-size: 30px;
+    top: 10%;
+}
