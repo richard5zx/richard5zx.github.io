@@ -17,7 +17,8 @@
         </div>
 
         <div class="container">
-            <form>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Get in touch!</h3>
                 <input type="text" id="name" placeholder="Enter Name" required>
                 <input type="email" id ="email" placeholder="Enter email" required>
                 <input type="text" id ="phone" placeholder="Enter phone" required>
@@ -26,6 +27,23 @@
                 <button type="submit">Send</button>
             </form>
         </div>
+        
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "richardchao2009@gmail.com",
+                    Password : "password",
+                    To : 'richardchao2009@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : document.getElementById("subject").value,
+                    Body : document.getElementById("message").value
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script>
 
         <div class ="footer">
             <a href="https://www.linkedin.com/in/richard5zx/"target="blank"><img width="50" src="assets/linkedin.png" alt=""></a>
