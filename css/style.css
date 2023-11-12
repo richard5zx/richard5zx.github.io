@@ -99,7 +99,7 @@ ul li.active a {
     text-align: center;
     border: 2px solid #888;
     border-radius: 1em;
-
+    margin-top: 3em;
 }
 
 .title p {
@@ -223,3 +223,44 @@ h2 {
 
 }
 /* Contact Me */
+
+.container {
+    width: 70%;
+    height: 70vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 15%;
+    opacity: 0.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4w;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px; 
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+}
