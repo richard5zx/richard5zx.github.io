@@ -1,3 +1,10 @@
+/* Universal*/
+* {
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Index - Header */
 body {
     background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(../assets/astronaut.jpg);
@@ -90,6 +97,9 @@ ul li.active a {
 .title {
     color: rgb(255, 255, 255);
     text-align: center;
+    border: 2px solid #888;
+    border-radius: 1em;
+
 }
 
 .title p {
@@ -141,7 +151,7 @@ h2 {
 .checkpoint:nth-child(even) {
     border-right: 3px solid #888;
     padding-right: 3em;
-    transform: translateX(-18.8em);
+    transform: translateX(-16.8em);
 }
 
 .checkpoint:nth-child(odd)::before, 
@@ -184,4 +194,32 @@ h2 {
     right: -0.5em;
 }
 
+@media screen and (max-width: 1150px) {
+    .timeline {
+        width: 80vw;
+    }
+
+    .timeline .checkpoint {
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border:none;
+    }
+
+    .timeline .checkpoint::before {
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline .checkpoint div::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
 /* Contact Me */
