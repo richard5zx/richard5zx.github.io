@@ -17,33 +17,15 @@
         </div>
 
         <div class="container">
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form action="https://formspree.io/f/xaygzppr" method="POST">
                 <h3>Get in touch!</h3>
-                <input type="text" id="name" placeholder="Enter Name" required>
-                <input type="email" id ="email" placeholder="Enter email" required>
-                <input type="text" id ="phone" placeholder="Enter phone" required>
-                <input type="text" id ="subject" placeholder="Enter subject" required>
-                <textarea id="message" rows="4" placeholder="Enter message"></textarea>
+                <input type="text" name="name" placeholder="Enter Name" required>
+                <input type="email" name="email" placeholder="Enter email" required>
+                <input type="text" name="subject" placeholder="Enter subject" required>
+                <textarea id="message" rows="4" col = "60" name="message" placeholder="Enter message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </div>
-        
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendEmail() {
-                Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "richardchao2009@gmail.com",
-                    Password : "password",
-                    To : 'richardchao2009@gmail.com',
-                    From : document.getElementById("email").value,
-                    Subject : document.getElementById("subject").value,
-                    Body : document.getElementById("message").value
-                }).then(
-                message => alert(message)
-                );
-            }
-        </script>
 
         <div class ="footer">
             <a href="https://www.linkedin.com/in/richard5zx/"target="blank"><img width="50" src="assets/linkedin.png" alt=""></a>
