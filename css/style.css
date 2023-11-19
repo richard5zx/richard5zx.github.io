@@ -239,23 +239,22 @@ h2 {
     left: 50%;
     transform: translate(-50%,0);
     top: 15%;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    padding: 2vw 4w;
     width: 90%;
     max-width: 600px;
     border-radius: 10px; 
 }
 
 form input, form textarea {
-    margin: 10px 0;
-    padding: 10px;
+    margin: 5px 0;
+    padding: 5px;
     outline: none;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 5px;
 }
 
@@ -282,4 +281,14 @@ input:focus-within, textarea:focus-within {
     outline: none;
     border-color: rgb(156, 11, 11);
     border-width: 3px;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    form input, form textarea {
+        margin: 10px 0;
+    }
 }
