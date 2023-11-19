@@ -64,6 +64,12 @@ ul li.active a {
     font-size: 100px;
 }
 
+@media screen and (max-width: 600px) {
+    .name h1 {
+        font-size: 60px;
+    }
+}
+
 .resume {
     margin-top: auto;
     text-align: center;
